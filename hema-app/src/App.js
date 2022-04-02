@@ -1,24 +1,47 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="Div1">
+        <Div1></Div1>
+      </div>
+      <div className="Div2">
+        <Div2></Div2>
+      </div>
+      <div className="Div3">
+        <Div3></Div3>
+      </div>
     </div>
+  );
+}
+
+function Div1() {
+  return (
+    <div className="Imagebox">
+      <div className="Ssentence">
+        <div className="Logo">(로고) HEMA</div>
+        <div className="Small1">Music,</div>
+        <div className="Small2">Connect Everyone</div>
+      </div>
+      <div className="Bsentence">
+        <div className="Big1">Eat, drink, listen and play.</div>
+        <div className="Big2">Find your joy with amazing people</div>
+      </div>
+      <img className="Mainimage" src={require("./img/Main.jpg")}></img>
+    </div>
+  );
+}
+
+function Div2() {
+  return (
+    <div>History역사</div>
+  );
+}
+
+function Div3() {
+  return (
+    <div>Random Image</div>
   );
 }
 
