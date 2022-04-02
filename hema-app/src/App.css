@@ -77,14 +77,108 @@
   color: white;
 }
 
+.Logobox {
+  position: absolute;
+  display: flex;
+  bottom: 40px;
+  right: 40px;
+}
+
+.Logobox img {
+  margin-left: 40px;
+  height: 40px;
+  width: 40px; 
+}
+
 /* 여기까지 div1 css */
 
+.Div2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 
+.PageTitle {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.Graph {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.TopLine {
+  border: 5px solid #000000;
+  width: 120px;
+}
+
+.Lines {
+  display: flex;
+  width: 130px;
+  height: 1415px;
+  justify-content: space-between;
+}
+
+.Lines div {
+  border: 1px solid #000000;
+}
+
+.Clef {
+  position: absolute;
+  top: 0;
+  transform: rotate(90deg);
+  width: 96px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.Clef img {
+  width:100%;
+  height:100%;
+  object-fit:cover; 
+}
+
+.Note {
+  position: absolute;
+  font-size: 0px;
+  text-align: left;
+  width: 50%;
+  top: 300px;
+  left: 47%;
+}
+
+.Note .ThisNote {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Note .ThisNote img{
+  font-size: 0px;
+}
+
+.Note .ThisNote .About{
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.Note .NoteLine {
+  border: 1px solid #000000;
+  margin-left: 12px;
 }
 
 .App-header {
