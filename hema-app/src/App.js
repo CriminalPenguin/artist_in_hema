@@ -2,11 +2,13 @@ import './App.css';
 import note from './img/note.svg';
 
 function App() {
+  let [카드, 카드변경]= useState([1,2,3,4,5,6,7,8,9,10]); 
+
   return (
     <div className="App">
       <Div1></Div1>
       <Div2></Div2>
-      <Div3></Div3>
+      <Div3 카드={카드} 카드변경={카드변경}></Div3>
     </div>
   );
 } // 전체 페이지 렌더링 함수
