@@ -85,7 +85,10 @@ function Div3() {
           <div className="Profile2" id="card4"><img src={require("./sample/4.jpeg")}></img></div>
           <div className="Profile1" id="card5"><img src={require("./sample/5.jpeg")}></img></div>
         </div>
-        <div className="SlideBar">슬라이드 바</div>
+        <div className="SlideBar">
+          <button className="Select">왼</button>
+          <button className="Select">오</button>
+        </div>
         <div className="More">
           <div>More members</div><div>화살표</div>
         </div>

@@ -212,6 +212,7 @@
 .Card {
   position: relative;
   height: 70%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,6 +221,14 @@
 
 .SlideBar {
   height: 5%;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Select {
+  width: 50px;
+  height: 20px;
 }
 
 .More {
@@ -238,7 +247,7 @@
   z-index: 1;
   border-radius: 30px;
   box-shadow:  10px 10px 20px #bebebe,
-              -10px -10px 20px #000000;
+              -10px -10px 20px #2c2c2c;
 }
 
 .Profile1 img {
@@ -248,11 +257,11 @@
 }
 
 #card1 {
-  right: 95%;
+  right: 64%;
 }
 
 #card5 {
-  left: 95%;
+  left: 64%;
 }
 
 .Profile2 {
@@ -263,7 +272,7 @@
   overflow: hidden;
   border-radius: 30px;
   box-shadow:  5px 5px 10px #bebebe,
-              -10px -10px 20px #000000;
+              -10px -10px 20px #2c2c2c;
 }
 
 .Profile2 img {
@@ -287,7 +296,7 @@
   overflow: hidden;
   border-radius: 30px;
   box-shadow:  5px 5px 10px #bebebe,
-              -10px -10px 20px #000000;
+              -10px -10px 20px #2c2c2c;
 }
 
 .Profile3 img {
