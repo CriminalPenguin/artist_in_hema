@@ -74,7 +74,22 @@ function Div2() {
 function Div3() {
   return (
     <div className="Div3">
-      <div>Random Image</div>
+      <div className="CardTitle">
+        <div className="Title">Random Artists</div>
+      </div>
+      <div className="CardPart">
+        <div className="Card">
+          <div className="Profile1" id="card1"><img src={require("./sample/1.png")}></img></div>
+          <div className="Profile2" id="card2"><img src={require("./sample/2.jpeg")}></img></div>
+          <div className="Profile3" id="card3"><img src={require("./sample/3.jpeg")}></img></div>
+          <div className="Profile2" id="card4"><img src={require("./sample/4.jpeg")}></img></div>
+          <div className="Profile1" id="card5"><img src={require("./sample/5.jpeg")}></img></div>
+        </div>
+        <div className="SlideBar">슬라이드 바</div>
+        <div className="More">
+          <div>More members</div><div>화살표</div>
+        </div>
+      </div>
     </div>
   );
 } //파트3만 렌더링
