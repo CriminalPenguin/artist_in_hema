@@ -1,8 +1,14 @@
 import './App.css';
 import note from './img/note.svg';
+import { useEffect, useState } from 'react';
 
 function App() {
-  let [카드, 카드변경]= useState([1,2,3,4,5,6,7,8,9,10]); 
+  let [카드, 카드변경]= useState(1);
+  if(카드>5){
+    카드변경(카드-5)
+  }else if(카드<=0){
+    카드변경(카드+5)
+  }
 
   return (
     <div className="App">
@@ -73,23 +79,17 @@ function Div2() {
   );
 } //파트2만 렌더링
 
-function Div3() {
+function Div3(props) {
   return (
     <div className="Div3">
       <div className="CardTitle">
         <div className="Title">Random Artists</div>
       </div>
       <div className="CardPart">
-        <div className="Card">
-          <div className="Profile1" id="card1"><img src={require("./sample/1.png")}></img></div>
-          <div className="Profile2" id="card2"><img src={require("./sample/2.jpeg")}></img></div>
-          <div className="Profile3" id="card3"><img src={require("./sample/3.jpeg")}></img></div>
-          <div className="Profile2" id="card4"><img src={require("./sample/4.jpeg")}></img></div>
-          <div className="Profile1" id="card5"><img src={require("./sample/5.jpeg")}></img></div>
-        </div>
+        <CardSlide 카드={props.카드} 카드변경={props.카드변경}></CardSlide>
         <div className="SlideBar">
-          <button className="Select">왼</button>
-          <button className="Select">오</button>
+          <button className="Select" onClick={()=>props.카드변경(props.카드-1)}>왼</button>
+          <button className="Select" onClick={()=>props.카드변경(props.카드+1)}>오</button>
         </div>
         <div className="More">
           <div>More members</div><div>화살표</div>
@@ -98,5 +98,63 @@ function Div3() {
     </div>
   );
 } //파트3만 렌더링
+
+function CardSlide(props) {
+  if(props.카드 === 1){
+    return (
+      <div className="Card">
+        <div className="Profile1" id="card1"><img src={require("./sample/1.png")}></img></div>
+        <div className="Profile2" id="card2"><img src={require("./sample/2.jpeg")}></img></div>
+        <div className="Profile3" id="card3"><img src={require("./sample/3.jpeg")}></img></div>
+        <div className="Profile2" id="card4"><img src={require("./sample/4.jpeg")}></img></div>
+        <div className="Profile1" id="card5"><img src={require("./sample/5.jpeg")}></img></div>
+      </div>
+    );
+  }
+  else if(props.카드 === 2){
+    return (
+      <div className="Card">
+        <div className="Profile1" id="card1"><img src={require("./sample/2.jpeg")}></img></div>
+        <div className="Profile2" id="card2"><img src={require("./sample/3.jpeg")}></img></div>
+        <div className="Profile3" id="card3"><img src={require("./sample/4.jpeg")}></img></div>
+        <div className="Profile2" id="card4"><img src={require("./sample/5.jpeg")}></img></div>
+        <div className="Profile1" id="card5"><img src={require("./sample/1.png")}></img></div>
+      </div>
+    );
+  }
+  else if(props.카드 === 3){
+    return (
+      <div className="Card">
+        <div className="Profile1" id="card1"><img src={require("./sample/3.jpeg")}></img></div>
+        <div className="Profile2" id="card2"><img src={require("./sample/4.jpeg")}></img></div>
+        <div className="Profile3" id="card3"><img src={require("./sample/5.jpeg")}></img></div>
+        <div className="Profile2" id="card4"><img src={require("./sample/1.png")}></img></div>
+        <div className="Profile1" id="card5"><img src={require("./sample/2.jpeg")}></img></div>
+      </div>
+    );
+  }
+  else if(props.카드 === 4){
+    return (
+      <div className="Card">
+        <div className="Profile1" id="card1"><img src={require("./sample/4.jpeg")}></img></div>
+        <div className="Profile2" id="card2"><img src={require("./sample/5.jpeg")}></img></div>
+        <div className="Profile3" id="card3"><img src={require("./sample/1.png")}></img></div>
+        <div className="Profile2" id="card4"><img src={require("./sample/2.jpeg")}></img></div>
+        <div className="Profile1" id="card5"><img src={require("./sample/3.jpeg")}></img></div>
+      </div>
+    );
+  }
+  else if(props.카드 === 5){
+    return (
+      <div className="Card">
+        <div className="Profile1" id="card1"><img src={require("./sample/5.jpeg")}></img></div>
+        <div className="Profile2" id="card2"><img src={require("./sample/1.png")}></img></div>
+        <div className="Profile3" id="card3"><img src={require("./sample/2.jpeg")}></img></div>
+        <div className="Profile2" id="card4"><img src={require("./sample/3.jpeg")}></img></div>
+        <div className="Profile1" id="card5"><img src={require("./sample/4.jpeg")}></img></div>
+      </div>
+    );
+  }
+}
 
 export default App;
