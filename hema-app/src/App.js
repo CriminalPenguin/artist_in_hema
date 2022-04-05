@@ -5,6 +5,8 @@ import left from './img/left.svg';
 import right from './img/right.svg';
 import arrow from './img/Arrow.svg';
 import { useRef, useEffect, useState } from 'react';
+import axios from 'axios';
+
 
 import Members from './Members.js';
 
@@ -12,11 +14,19 @@ import { Route } from 'react-router-dom';
 
 function App() {
   let [카드, 카드변경]= useState(1);
+  let 랜덤프로필 = [];
+
   if(카드>5){
     카드변경(카드-5)
   }else if(카드<=0){
     카드변경(카드+5)
   }
+
+  useEffect(()=>{
+    axios.get('https://codingapple1.github.io/shop/data2.json')
+      .then((result)=>{ 랜덤프로필.push })
+      .catch(()=>{ })
+  },[] );
 
   return (
     <div className="App">
