@@ -111,7 +111,7 @@ function CardSlide(props) {
   if(props.카드 === 1){
     return (
       <div className="Card">
-        <div className="Profile1" id="card1"><img src={require("./sample/1.png")}></img></div>
+        <div className="Profile1" id="card1"><img src={require("./sample/Sample.png")}></img></div>
         <div className="Profile2" id="card2"><img src={require("./sample/2.jpeg")}></img></div>
         <div className="Profile3" id="card3"><img src={require("./sample/3.jpeg")}></img></div>
         <div className="Profile2" id="card4"><img src={require("./sample/4.jpeg")}></img></div>
@@ -126,7 +126,7 @@ function CardSlide(props) {
         <div className="Profile2" id="card2"><img src={require("./sample/3.jpeg")}></img></div>
         <div className="Profile3" id="card3"><img src={require("./sample/4.jpeg")}></img></div>
         <div className="Profile2" id="card4"><img src={require("./sample/5.jpeg")}></img></div>
-        <div className="Profile1" id="card5"><img src={require("./sample/1.png")}></img></div>
+        <div className="Profile1" id="card5"><img src={require("./sample/Sample.png")}></img></div>
       </div>
     );
   }
@@ -136,7 +136,7 @@ function CardSlide(props) {
         <div className="Profile1" id="card1"><img src={require("./sample/3.jpeg")}></img></div>
         <div className="Profile2" id="card2"><img src={require("./sample/4.jpeg")}></img></div>
         <div className="Profile3" id="card3"><img src={require("./sample/5.jpeg")}></img></div>
-        <div className="Profile2" id="card4"><img src={require("./sample/1.png")}></img></div>
+        <div className="Profile2" id="card4"><img src={require("./sample/Sample.png")}></img></div>
         <div className="Profile1" id="card5"><img src={require("./sample/2.jpeg")}></img></div>
       </div>
     );
@@ -146,7 +146,7 @@ function CardSlide(props) {
       <div className="Card">
         <div className="Profile1" id="card1"><img src={require("./sample/4.jpeg")}></img></div>
         <div className="Profile2" id="card2"><img src={require("./sample/5.jpeg")}></img></div>
-        <div className="Profile3" id="card3"><img src={require("./sample/1.png")}></img></div>
+        <div className="Profile3" id="card3"><img src={require("./sample/Sample.png")}></img></div>
         <div className="Profile2" id="card4"><img src={require("./sample/2.jpeg")}></img></div>
         <div className="Profile1" id="card5"><img src={require("./sample/3.jpeg")}></img></div>
       </div>
@@ -156,7 +156,7 @@ function CardSlide(props) {
     return (
       <div className="Card">
         <div className="Profile1" id="card1"><img src={require("./sample/5.jpeg")}></img></div>
-        <div className="Profile2" id="card2"><img src={require("./sample/1.png")}></img></div>
+        <div className="Profile2" id="card2"><img src={require("./sample/Sample.png")}></img></div>
         <div className="Profile3" id="card3"><img src={require("./sample/2.jpeg")}></img></div>
         <div className="Profile2" id="card4"><img src={require("./sample/3.jpeg")}></img></div>
         <div className="Profile1" id="card5"><img src={require("./sample/4.jpeg")}></img></div>
