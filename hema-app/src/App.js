@@ -6,6 +6,10 @@ import right from './img/right.svg';
 import arrow from './img/Arrow.svg';
 import { useRef, useEffect, useState } from 'react';
 
+import Members from './Members.js';
+
+import { Link, Route } from 'react-router-dom';
+
 function App() {
   let [카드, 카드변경]= useState(1);
   if(카드>5){
@@ -16,13 +20,20 @@ function App() {
 
   return (
     <div className="App">
-      <div className="Logo"><img src={logo}></img></div>
-      <Div1></Div1>
-      <Div2></Div2>
-      <Div3 카드={카드} 카드변경={카드변경}></Div3>
+      <Route exact path="/">
+        <div className="Logo"><img src={logo}></img></div>
+        <Div1></Div1>
+        <Div2></Div2>
+        <Div3 카드={카드} 카드변경={카드변경}></Div3>
+      </Route>
+
+      <Route path="/members">
+        <Members></Members>
+      </Route>
     </div>
   );
 } // 전체 페이지 렌더링 함수
+
 
 function Div1() {
   return (
