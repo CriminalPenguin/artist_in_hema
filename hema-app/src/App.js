@@ -8,7 +8,7 @@ import { useRef, useEffect, useState } from 'react';
 
 import Members from './Members.js';
 
-import { Link, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 function App() {
   let [카드, 카드변경]= useState(1);
@@ -110,9 +110,14 @@ function Div3(props) {
           <button className="Select" onClick={()=>props.카드변경(props.카드-1)}><img src={left}></img></button>
           <button className="Select" onClick={()=>props.카드변경(props.카드+1)}><img src={right}></img></button>
         </div>
+        
         <div className="More">
-          <div className="Members">More members</div><div className="Arrow"><img src={arrow}></img></div>
+          <a href="/members">
+          <div className="Members">More members</div>
+          <div className="Arrow"><img src={arrow}></img></div>
+          </a>
         </div>
+        
       </div>
     </div>
   );
