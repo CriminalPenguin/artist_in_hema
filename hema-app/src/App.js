@@ -1,6 +1,6 @@
 import './App.css';
 import note from './img/note.svg';
-import { useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 
 function App() {
   let [카드, 카드변경]= useState(1);
@@ -12,6 +12,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className="Logo">(로고) HEMA</div>
       <Div1></Div1>
       <Div2></Div2>
       <Div3 카드={카드} 카드변경={카드변경}></Div3>
@@ -22,9 +23,11 @@ function App() {
 function Div1() {
   return (
     <div className="Div1">
+      <div className="Fixed">
       <div className="Imagebox">
+        
         <div className="Ssentence">
-          <div className="Logo">(로고) HEMA</div>
+        
           <div className="Small1">Music,</div>
           <div className="Small2">Connect Everyone</div>
         </div>
@@ -41,6 +44,7 @@ function Div1() {
           </a>
         </div>
         <img className="Mainimage" src={require("./img/Main.jpg")}></img>
+      </div>
       </div>
     </div>
   );
