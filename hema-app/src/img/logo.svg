@@ -1,0 +1,14 @@
+<svg width="154" height="86" viewBox="0 0 154 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect y="13" width="154" height="73" fill="#FF8000"/>
+<path d="M18.0103 65V35.9091H25.0415V47.5852H36.5046V35.9091H43.5217V65H36.5046V53.3097H25.0415V65H18.0103ZM47.9322 65V35.9091H68.2163V41.6193H54.9634V47.5852H67.1793V53.3097H54.9634V59.2898H68.2163V65H47.9322ZM72.6197 35.9091H81.3271L88.7134 53.9205H89.0543L96.4407 35.9091H105.148V65H98.3015V47.1307H98.06L91.0714 64.8153H86.6964L79.7077 47.0312H79.4663V65H72.6197V35.9091ZM115.826 65H108.27L118.085 35.9091H127.446L137.261 65H129.704L122.872 43.2386H122.645L115.826 65ZM114.818 53.5511H130.613V58.892H114.818V53.5511Z" fill="white"/>
+<circle cx="9.5" cy="21.5" r="2.5" fill="white"/>
+<circle cx="144.5" cy="21.5" r="2.5" fill="white"/>
+<circle cx="144.5" cy="77.5" r="2.5" fill="white"/>
+<circle cx="9.5" cy="77.5" r="2.5" fill="white"/>
+<path d="M107 0L107 13" stroke="#FF8000" stroke-width="3"/>
+<path d="M47 0L47 13" stroke="#FF8000" stroke-width="3"/>
+<line x1="46" y1="1.5" x2="108" y2="1.5" stroke="#FF8000" stroke-width="3"/>
+<rect x="119" y="7" width="8" height="6" fill="black"/>
+<rect x="132" y="7" width="8" height="6" fill="black"/>
+<path d="M15 5C15 4.44772 15.4477 4 16 4V4C16.5523 4 17 4.44772 17 5V13H15V5Z" fill="#C4C4C4"/>
+</svg>

@@ -40,12 +40,14 @@
 
 .Logo {
   color: black;
-  font-weight: 400;
-  font-size: 28px;
   position: fixed;
   top: 40px;
   left: 40px;
   z-index: 100;
+}
+
+.Logo img {
+  width:80px;
 }
 
 .Small1 {

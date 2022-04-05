@@ -1,5 +1,6 @@
 import './App.css';
 import note from './img/note.svg';
+import logo from './img/logo.svg';
 import { useRef, useEffect, useState } from 'react';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="Logo">(로고) HEMA</div>
+      <div className="Logo"><img src={logo}></img></div>
       <Div1></Div1>
       <Div2></Div2>
       <Div3 카드={카드} 카드변경={카드변경}></Div3>
