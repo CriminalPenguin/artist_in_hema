@@ -1,6 +1,9 @@
 import './App.css';
 import note from './img/note.svg';
 import logo from './img/logo.svg';
+import left from './img/left.svg';
+import right from './img/right.svg';
+import arrow from './img/Arrow.svg';
 import { useRef, useEffect, useState } from 'react';
 
 function App() {
@@ -93,11 +96,11 @@ function Div3(props) {
       <div className="CardPart">
         <CardSlide 카드={props.카드} 카드변경={props.카드변경}></CardSlide>
         <div className="SlideBar">
-          <button className="Select" onClick={()=>props.카드변경(props.카드-1)}>왼</button>
-          <button className="Select" onClick={()=>props.카드변경(props.카드+1)}>오</button>
+          <button className="Select" onClick={()=>props.카드변경(props.카드-1)}><img src={left}></img></button>
+          <button className="Select" onClick={()=>props.카드변경(props.카드+1)}><img src={right}></img></button>
         </div>
         <div className="More">
-          <div>More members</div><div>화살표</div>
+          <div className="Members">More members</div><div className="Arrow"><img src={arrow}></img></div>
         </div>
       </div>
     </div>
