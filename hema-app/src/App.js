@@ -5,16 +5,31 @@ import left from './img/left.svg';
 import right from './img/right.svg';
 import arrow from './img/Arrow.svg';
 import { useRef, useEffect, useState } from 'react';
-import axios from 'axios';
 
+import dummy from "./data/data.json"
 
 import Members from './Members.js';
 
 import { Route } from 'react-router-dom';
 
+function 랜덤선택(랜덤아이디) {
+  var i=0;
+  var num = 0;
+  var 아이디 = dummy.members.filter((id)=>{return id});
+  var array = Array(아이디.length).fill().map((item, index) => index + 1);
+  console.log(array);
+
+  for(i=0; i<5; i++){
+    num = Math.floor(Math.random() * (array.length));
+    랜덤아이디.push(array.splice(num,1)[0]);
+  }
+
+  console.log(랜덤아이디);
+}
+
 function App() {
   let [카드, 카드변경]= useState(1);
-  let 랜덤프로필 = [];
+  let 랜덤아이디 = [];
 
   if(카드>5){
     카드변경(카드-5)
@@ -22,11 +37,7 @@ function App() {
     카드변경(카드+5)
   }
 
-  useEffect(()=>{
-    axios.get('https://codingapple1.github.io/shop/data2.json')
-      .then((result)=>{ 랜덤프로필.push })
-      .catch(()=>{ })
-  },[] );
+  랜덤선택(랜덤아이디);
 
   return (
     <div className="App">
@@ -34,7 +45,7 @@ function App() {
         <div className="Logo"><img src={logo}></img></div>
         <Div1></Div1>
         <Div2></Div2>
-        <Div3 카드={카드} 카드변경={카드변경}></Div3>
+        <Div3 카드={카드} 카드변경={카드변경} 랜덤아이디={랜덤아이디}></Div3>
       </Route>
 
       <Route path="/members">
@@ -115,7 +126,7 @@ function Div3(props) {
         <div className="Title">Random Artists</div>
       </div>
       <div className="CardPart">
-        <CardSlide 카드={props.카드} 카드변경={props.카드변경}></CardSlide>
+        <CardSlide 카드={props.카드} 카드변경={props.카드변경} 랜덤아이디={props.랜덤아이디}></CardSlide>
         <div className="SlideBar">
           <button className="Select" onClick={()=>props.카드변경(props.카드-1)}><img src={left}></img></button>
           <button className="Select" onClick={()=>props.카드변경(props.카드+1)}><img src={right}></img></button>
@@ -134,58 +145,59 @@ function Div3(props) {
 } //파트3만 렌더링
 
 function CardSlide(props) {
+  console.log(props.랜덤아이디[0]);
   if(props.카드 === 1){
     return (
       <div className="Card">
-        <div className="Profile1" id="card1"><img src={require("./sample/Sample.png")}></img></div>
-        <div className="Profile2" id="card2"><img src={require("./sample/2.jpeg")}></img></div>
-        <div className="Profile3" id="card3"><img src={require("./sample/3.jpeg")}></img></div>
-        <div className="Profile2" id="card4"><img src={require("./sample/4.jpeg")}></img></div>
-        <div className="Profile1" id="card5"><img src={require("./sample/5.jpeg")}></img></div>
+        <div className="Profile1" id="card1"><img src={require("./sample/" + props.랜덤아이디[0] + ".jpeg")}></img></div>
+        <div className="Profile2" id="card2"><img src={require("./sample/" + props.랜덤아이디[1] + ".jpeg")}></img></div>
+        <div className="Profile3" id="card3"><img src={require("./sample/" + props.랜덤아이디[2] + ".jpeg")}></img></div>
+        <div className="Profile2" id="card4"><img src={require("./sample/" + props.랜덤아이디[3] + ".jpeg")}></img></div>
+        <div className="Profile1" id="card5"><img src={require("./sample/" + props.랜덤아이디[4] + ".jpeg")}></img></div>
       </div>
     );
   }
   else if(props.카드 === 2){
     return (
       <div className="Card">
-        <div className="Profile1" id="card1"><img src={require("./sample/2.jpeg")}></img></div>
-        <div className="Profile2" id="card2"><img src={require("./sample/3.jpeg")}></img></div>
-        <div className="Profile3" id="card3"><img src={require("./sample/4.jpeg")}></img></div>
-        <div className="Profile2" id="card4"><img src={require("./sample/5.jpeg")}></img></div>
-        <div className="Profile1" id="card5"><img src={require("./sample/Sample.png")}></img></div>
+        <div className="Profile1" id="card1"><img src={require("./sample/" + props.랜덤아이디[1] + ".jpeg")}></img></div>
+        <div className="Profile2" id="card2"><img src={require("./sample/" + props.랜덤아이디[2] + ".jpeg")}></img></div>
+        <div className="Profile3" id="card3"><img src={require("./sample/" + props.랜덤아이디[3] + ".jpeg")}></img></div>
+        <div className="Profile2" id="card4"><img src={require("./sample/" + props.랜덤아이디[4] + ".jpeg")}></img></div>
+        <div className="Profile1" id="card5"><img src={require("./sample/" + props.랜덤아이디[0] + ".jpeg")}></img></div>
       </div>
     );
   }
   else if(props.카드 === 3){
     return (
       <div className="Card">
-        <div className="Profile1" id="card1"><img src={require("./sample/3.jpeg")}></img></div>
-        <div className="Profile2" id="card2"><img src={require("./sample/4.jpeg")}></img></div>
-        <div className="Profile3" id="card3"><img src={require("./sample/5.jpeg")}></img></div>
-        <div className="Profile2" id="card4"><img src={require("./sample/Sample.png")}></img></div>
-        <div className="Profile1" id="card5"><img src={require("./sample/2.jpeg")}></img></div>
+        <div className="Profile1" id="card1"><img src={require("./sample/" + props.랜덤아이디[2] + ".jpeg")}></img></div>
+        <div className="Profile2" id="card2"><img src={require("./sample/" + props.랜덤아이디[3] + ".jpeg")}></img></div>
+        <div className="Profile3" id="card3"><img src={require("./sample/" + props.랜덤아이디[4] + ".jpeg")}></img></div>
+        <div className="Profile2" id="card4"><img src={require("./sample/" + props.랜덤아이디[0] + ".jpeg")}></img></div>
+        <div className="Profile1" id="card5"><img src={require("./sample/" + props.랜덤아이디[1] + ".jpeg")}></img></div>
       </div>
     );
   }
   else if(props.카드 === 4){
     return (
       <div className="Card">
-        <div className="Profile1" id="card1"><img src={require("./sample/4.jpeg")}></img></div>
-        <div className="Profile2" id="card2"><img src={require("./sample/5.jpeg")}></img></div>
-        <div className="Profile3" id="card3"><img src={require("./sample/Sample.png")}></img></div>
-        <div className="Profile2" id="card4"><img src={require("./sample/2.jpeg")}></img></div>
-        <div className="Profile1" id="card5"><img src={require("./sample/3.jpeg")}></img></div>
+        <div className="Profile1" id="card1"><img src={require("./sample/" + props.랜덤아이디[3] + ".jpeg")}></img></div>
+        <div className="Profile2" id="card2"><img src={require("./sample/" + props.랜덤아이디[4] + ".jpeg")}></img></div>
+        <div className="Profile3" id="card3"><img src={require("./sample/" + props.랜덤아이디[0] + ".jpeg")}></img></div>
+        <div className="Profile2" id="card4"><img src={require("./sample/" + props.랜덤아이디[1] + ".jpeg")}></img></div>
+        <div className="Profile1" id="card5"><img src={require("./sample/" + props.랜덤아이디[2] + ".jpeg")}></img></div>
       </div>
     );
   }
   else if(props.카드 === 5){
     return (
       <div className="Card">
-        <div className="Profile1" id="card1"><img src={require("./sample/5.jpeg")}></img></div>
-        <div className="Profile2" id="card2"><img src={require("./sample/Sample.png")}></img></div>
-        <div className="Profile3" id="card3"><img src={require("./sample/2.jpeg")}></img></div>
-        <div className="Profile2" id="card4"><img src={require("./sample/3.jpeg")}></img></div>
-        <div className="Profile1" id="card5"><img src={require("./sample/4.jpeg")}></img></div>
+        <div className="Profile1" id="card1"><img src={require("./sample/" + props.랜덤아이디[4] + ".jpeg")}></img></div>
+        <div className="Profile2" id="card2"><img src={require("./sample/" + props.랜덤아이디[0] + ".jpeg")}></img></div>
+        <div className="Profile3" id="card3"><img src={require("./sample/" + props.랜덤아이디[1] + ".jpeg")}></img></div>
+        <div className="Profile2" id="card4"><img src={require("./sample/" + props.랜덤아이디[2] + ".jpeg")}></img></div>
+        <div className="Profile1" id="card5"><img src={require("./sample/" + props.랜덤아이디[3] + ".jpeg")}></img></div>
       </div>
     );
   }

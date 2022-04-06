@@ -1,0 +1,82 @@
+{
+  "members":[
+    {
+      "id" : 1,
+      "join" : 2012,
+      "name" : "이준구",
+      "ename" : "JUNGU LEE",
+      "phone" : "01041391978",
+      "session" : ["guitar","synthesizer"],
+      "band" : ["12NewWave", "Downtown Bros", "Fuse"],
+      "add" : "⚽️"
+    },
+    {
+      "id" : 2,
+      "join" : 2012,
+      "name" : "장태수",
+      "ename" : "TAESOO JANG",
+      "phone" : "01024606389",
+      "session" : ["bass"],
+      "band" : ["12NewWave", "Downtown Bros", "Fuse"]
+    },
+    {
+      "id" : 3,
+      "join" : 2012,
+      "name" : "박호정",
+      "ename" : "HOJUNG PARK",
+      "phone" : "01031202086",
+      "session" : ["vocal"],
+      "band" : ["12NewWave", "Fuse"],
+      "add" : "⚽️"
+    },
+    {
+      "id" : 4,
+      "join" : 2012,
+      "name" : "김용호",
+      "ename" : "YONGHO KIM",
+      "phone" : "01064497174",
+      "session" : ["vocal", "bass"],
+      "band" : [""],
+      "add" : "⚽️"
+    },
+    {
+      "id" : 5,
+      "join" : 2012,
+      "name" : "양현동",
+      "ename" : "HYUNDONG YANG",
+      "phone" : "01056357720",
+      "session" : ["guitar"],
+      "band" : ["12NewWave", "Downtown Bros", "Fuse"]
+    },
+    {
+      "id" : 6,
+      "join" : 2012,
+      "name" : "김원경",
+      "ename" : "WONKYUNG KIM",
+      "phone" : "01025353018",
+      "session" : ["vocal"],
+      "band" : ["12NewWave", "SMC"]
+    },
+    {
+      "id" : 7,
+      "join" : 2013,
+      "name" : "황태일",
+      "ename" : "TAEILL HWANG",
+      "phone" : "01073840076",
+      "session" : ["drum", "keyboard"],
+      "band" : ["13NewWave", "Fuse"],
+      "add" : "⚽️"
+    },
+    {
+      "id" : 8,
+      "join" : 2013,
+      "name" : "정진현",
+      "ename" : "JINHYUN JUNG",
+      "phone" : "01089025283",
+      "session" : ["vocal"],
+      "band" : ["13NewWave", "Downtown Bros"],
+      "add" : "⚽️"
+    }
+
+  ]
+}
