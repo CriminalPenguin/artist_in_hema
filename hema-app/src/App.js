@@ -12,6 +12,9 @@ import Members from './Members.js';
 
 import { Route } from 'react-router-dom';
 
+let 랜덤아이디 = [];
+랜덤선택(랜덤아이디);
+
 function 랜덤선택(랜덤아이디) {
   var i=0;
   var num = 0;
@@ -29,15 +32,13 @@ function 랜덤선택(랜덤아이디) {
 
 function App() {
   let [카드, 카드변경]= useState(1);
-  let 랜덤아이디 = [];
+  
 
   if(카드>5){
     카드변경(카드-5)
   }else if(카드<=0){
     카드변경(카드+5)
   }
-  
-  랜덤선택(랜덤아이디);
 
   return (
     <div className="App">
@@ -145,7 +146,6 @@ function Div3(props) {
 } //파트3만 렌더링
 
 function CardSlide(props) {
-  console.log(props.랜덤아이디[0]);
   if(props.카드 === 1){
     return (
       <div className="Card">
