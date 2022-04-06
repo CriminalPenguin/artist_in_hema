@@ -36,7 +36,7 @@ function App() {
   }else if(카드<=0){
     카드변경(카드+5)
   }
-
+  
   랜덤선택(랜덤아이디);
 
   return (
