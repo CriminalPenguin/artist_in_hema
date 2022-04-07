@@ -4,35 +4,40 @@
       "id" : 1,
       "join" : 2012,
       "name" : "이준구",
+      "class" : "12",
       "ename" : "JUNGU LEE",
       "phone" : "01041391978",
       "session" : ["guitar","synthesizer"],
-      "band" : ["12NewWave", "Downtown Bros", "Fuse"],
+      "band" : ["12NewWave", "양현동의esp", "Downtown Bros", "Fuse"],
       "add" : "⚽️"
     },
     {
       "id" : 2,
       "join" : 2012,
       "name" : "장태수",
+      "class" : "12",
       "ename" : "TAESOO JANG",
       "phone" : "01024606389",
       "session" : ["bass"],
-      "band" : ["12NewWave", "Downtown Bros", "Fuse"]
+      "band" : ["12NewWave", "Downtown Bros", "Fuse", "MNN", "WER"]
     },
     {
       "id" : 3,
       "join" : 2012,
       "name" : "박호정",
+      "class" : "12",
       "ename" : "HOJUNG PARK",
       "phone" : "01031202086",
       "session" : ["vocal"],
       "band" : ["12NewWave", "Fuse"],
-      "add" : "⚽️"
+      "add" : "⚽️",
+      "boss" : true
     },
     {
       "id" : 4,
       "join" : 2012,
       "name" : "김용호",
+      "class" : "12",
       "ename" : "YONGHO KIM",
       "phone" : "01064497174",
       "session" : ["vocal", "bass"],
@@ -43,15 +48,17 @@
       "id" : 5,
       "join" : 2012,
       "name" : "양현동",
+      "class" : "12",
       "ename" : "HYUNDONG YANG",
       "phone" : "01056357720",
       "session" : ["guitar"],
-      "band" : ["12NewWave", "Downtown Bros", "Fuse"]
+      "band" : ["12NewWave", "양현동의esp", "Downtown Bros", "YTR", "Fuse"]
     },
     {
       "id" : 6,
       "join" : 2012,
       "name" : "김원경",
+      "class" : "12",
       "ename" : "WONKYUNG KIM",
       "phone" : "01025353018",
       "session" : ["vocal"],
@@ -61,6 +68,7 @@
       "id" : 7,
       "join" : 2013,
       "name" : "황태일",
+      "class" : "13",
       "ename" : "TAEILL HWANG",
       "phone" : "01073840076",
       "session" : ["drum", "keyboard"],
@@ -71,12 +79,24 @@
       "id" : 8,
       "join" : 2013,
       "name" : "정진현",
+      "class" : "13",
       "ename" : "JINHYUN JUNG",
       "phone" : "01089025283",
       "session" : ["vocal"],
       "band" : ["13NewWave", "Downtown Bros"],
+      "add" : "⚽️",
+      "boss" : true
+    },
+    {
+      "id" : 9,
+      "join" : 2008,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"],
       "add" : "⚽️"
     }
-
   ]
 }

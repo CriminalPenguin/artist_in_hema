@@ -1,0 +1,62 @@
+.Main {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Years {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Num {
+  width: 92px;
+  height: 77px;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 77px; 
+}
+
+.Members {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Photo {
+  width: 50%;
+  height: 50vw;
+  overflow: hidden;
+}
+
+.Photo img {
+  width:100%;
+  height:100%;
+  object-fit:cover; 
+}
+
+.AboutR {
+  height: 50vw;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: right;
+  align-items: right;
+}
+
+.AboutL {
+  height: 50vw;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+  background-color: #e5e5e5;
+}
