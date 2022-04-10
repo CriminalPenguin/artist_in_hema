@@ -41,7 +41,7 @@
       "ename" : "YONGHO KIM",
       "phone" : "01064497174",
       "session" : ["vocal", "bass"],
-      "band" : [""],
+      "band" : ["YTR", "가오리", "라무네"],
       "add" : "⚽️"
     },
     {
@@ -69,10 +69,10 @@
       "join" : 2013,
       "name" : "황태일",
       "class" : "13",
-      "ename" : "TAEILL HWANG",
+      "ename" : "TAEIL HWANG",
       "phone" : "01073840076",
       "session" : ["drum", "keyboard"],
-      "band" : ["13NewWave", "Fuse"],
+      "band" : ["13NewWave", "Fuse", "WER", "수민은 혼란스럽다", "Alcoholics"],
       "add" : "⚽️"
     },
     {
@@ -97,6 +97,286 @@
       "session" : ["drum"],
       "band" : ["12NewWave", "Downtown Bros"],
       "add" : "⚽️"
+    },
+    {
+      "id" : 10,
+      "join" : 1991,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 11,
+      "join" : 1992,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 12,
+      "join" : 1993,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 13,
+      "join" : 1994,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 14,
+      "join" : 1995,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 15,
+      "join" : 1996,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 16,
+      "join" : 1997,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 17,
+      "join" : 1998,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 18,
+      "join" : 1999,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 19,
+      "join" : 2000,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 20,
+      "join" : 2001,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 21,
+      "join" : 2002,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 22,
+      "join" : 2003,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 23,
+      "join" : 2004,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 24,
+      "join" : 2005,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 25,
+      "join" : 2006,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 26,
+      "join" : 2007,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 27,
+      "join" : 2008,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 28,
+      "join" : 2009,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 29,
+      "join" : 2010,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 30,
+      "join" : 2011,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 31,
+      "join" : 2014,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 32,
+      "join" : 2015,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 33,
+      "join" : 2016,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 34,
+      "join" : 2017,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 35,
+      "join" : 2018,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 36,
+      "join" : 2019,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
+    },
+    {
+      "id" : 37,
+      "join" : 2020,
+      "name" : "최우석",
+      "class" : "08",
+      "ename" : "WOOSUCK CHOI",
+      "phone" : "01087679455",
+      "session" : ["drum"],
+      "band" : ["12NewWave", "Downtown Bros"]
     }
   ]
 }
