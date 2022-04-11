@@ -44,6 +44,7 @@
 }
 
 .AboutR {
+  position: relative;
   height: 50vw;
   width: 50%;
   display: flex;
@@ -55,6 +56,7 @@
 }
 
 .AboutL {
+  position: relative;
   height: 50vw;
   width: 50%;
   display: flex;
@@ -64,4 +66,59 @@
   align-items: left;
   background-color: #e5e5e5;
   border: 3px solid black;
+}
+
+.Name {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  margin-top: 40px;
+}
+
+.Ename {
+  color: #FF8000;
+}
+
+.Ename2 {
+  color: #951E75;
+}
+
+.Class {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Session {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Band {
+  display: flex;
+  justify-content: space-between;
+}
+
+.DESC {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.ClassMember {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ClassMember div {
+  cursor: pointer;
 }

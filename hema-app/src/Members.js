@@ -59,52 +59,105 @@ function Div2() {
 } // 실제 표시되는 부분(사진, 내용)
 
 function Left(props) {
-  const data = dummy.members.filter(function(element){
+  var data = dummy.members.filter(function(element){
     return element.join === props.a;
   }) // 받아온 가입년도 정보를 기반으로 가입년도별 데이터 추출
+  let [선택자, 선택자변경] = useState(data[0]);
 
   return(
     <div className="Members">
-      <div className="Photo"><img src={require("./sample/"+ data[0].id + ".jpeg")}></img></div>
+      <div className="Photo"><img src={require("./sample/"+ 선택자.id + ".jpeg")}></img></div>
       <div className="AboutR">
         <div className="Name">
-          <div>{data[0].join}, we got</div>
-          <div> {data[0].ename}</div>
+          <div>{선택자.join}, we got</div>
+          <div className="Ename">{선택자.ename}</div>
         </div>
-        <div className="Class">{data[0].class}</div>
-        <div className="Session">{data[0].session}</div>
-        <div className="Band">{data[0].band}</div>
-        {/* {data.map(function(i){
-          console.log(data)
-          return(
-            
-            <div>
-              {data[i].name}
-            </div>
-          )
-        })} */}
+        <div className="Class">
+          <div className="Desc">In the class of</div>
+          <div>{선택자.class}</div>
+        </div>
+        <div className="Session">
+          <div className="Desc">Session</div>
+          {선택자.session.map(function(b){
+            return(
+              <div>
+                {b}
+              </div>
+            )
+          })}
+        </div>
+        <div className="Band">
+          <div className="Desc">Band</div>
+          {선택자.band.map(function(b){
+            return(
+              <div>
+                {b}
+              </div>
+            )
+          })}
+        </div>
+        <div className="ClassMember">
+          {data.map(function(i){
+            return(
+              <div onClick={()=>선택자변경(선택자=i)}>
+                {i.name}
+              </div>
+            )
+          })}
+        </div>
       </div>
     </div>
   )
 }
 
 function Right(props) {
-  const data = dummy.members.filter(function(element){
+  var data = dummy.members.filter(function(element){
     return element.join === (props.a + 1);
   })
+  let [선택자, 선택자변경] = useState(data[0]);
   
   return(
     <div className="Members">
       <div className="AboutL">
         <div className="Name">
-          <div>{data[0].join}, we got</div>
-          <div> {data[0].ename}</div>
+          <div>{선택자.join}, we got</div>
+          <div className="Ename2">{선택자.ename}</div>
         </div>
-        <div className="Class">{data[0].class}</div>
-        <div className="Session">{data[0].session}</div>
-        <div className="Band">{data[0].band}</div>
+        <div className="Class">
+          <div className="Desc">In the class of</div>
+          <div>{선택자.class}</div>
+        </div>
+        <div className="Session">
+          <div className="Desc">Session</div>
+          {선택자.session.map(function(b){
+            return(
+              <div>
+                {b}
+              </div>
+            )
+          })}
+        </div>
+        <div className="Band">
+          <div className="Desc">Band</div>
+          {선택자.band.map(function(b){
+            return(
+              <div>
+                {b}
+              </div>
+            )
+          })}
+        </div>
+        <div className="ClassMember">
+          {data.map(function(i){
+            return(
+              <div onClick={()=>선택자변경(선택자=i)}>
+                {i.name}
+              </div>
+            )
+          })}
+        </div>
       </div>
-      <div className="Photo"><img src={require("./sample/"+data[0].id+".jpeg")}></img></div>
+      <div className="Photo"><img src={require("./sample/"+선택자.id+".jpeg")}></img></div>
     </div>
   )
 }
