@@ -1,0 +1,35 @@
+.Main {
+  justify-content: center;
+  text-align: center;
+}
+
+.Years {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Num {
+  width: 92px;
+  height: 77px;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 77px;
+  color: black;
+}
+
+.Members {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.Display {
+  height: 767px;
+  width: 480px;
+  
+}

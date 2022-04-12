@@ -70,14 +70,9 @@ function Left(props) {
       <div className="AboutR">
         <div className="Name">
           <div>{선택자.join}, we got</div>
-          <div className="Ename">{선택자.ename}</div>
-        </div>
-        <div className="Class">
-          <div className="Desc">In the class of</div>
-          <div>{선택자.class}</div>
+          <div className="Ename">{선택자.class}&nbsp;&nbsp;{선택자.ename}</div>
         </div>
         <div className="Session">
-          <div className="Desc">Session</div>
           {선택자.session.map(function(b){
             return(
               <div>
@@ -87,7 +82,6 @@ function Left(props) {
           })}
         </div>
         <div className="Band">
-          <div className="Desc">Band</div>
           {선택자.band.map(function(b){
             return(
               <div>
@@ -121,14 +115,9 @@ function Right(props) {
       <div className="AboutL">
         <div className="Name">
           <div>{선택자.join}, we got</div>
-          <div className="Ename2">{선택자.ename}</div>
-        </div>
-        <div className="Class">
-          <div className="Desc">In the class of</div>
-          <div>{선택자.class}</div>
+          <div className="Ename2">{선택자.class}&nbsp;&nbsp;{선택자.ename}</div>
         </div>
         <div className="Session">
-          <div className="Desc">Session</div>
           {선택자.session.map(function(b){
             return(
               <div>
@@ -138,7 +127,6 @@ function Right(props) {
           })}
         </div>
         <div className="Band">
-          <div className="Desc">Band</div>
           {선택자.band.map(function(b){
             return(
               <div>

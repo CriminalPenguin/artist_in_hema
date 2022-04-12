@@ -8,7 +8,7 @@ import { useRef, useEffect, useState } from 'react';
 
 import dummy from "./data/data.json"
 
-import Members from './Members.js';
+import Members from './Members2.js';
 
 import { Route } from 'react-router-dom';
 
