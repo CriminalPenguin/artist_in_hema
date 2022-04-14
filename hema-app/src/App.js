@@ -6,6 +6,8 @@ import right from './img/right.svg';
 import arrow from './img/Arrow.svg';
 import { useRef, useEffect, useState } from 'react';
 
+import TypeIt from "typeit-react";
+
 import dummy from "./data/data.json"
 
 import Members from './Members2.js';
@@ -33,7 +35,6 @@ function 랜덤선택(랜덤아이디) {
 function App() {
   let [카드, 카드변경]= useState(1);
   
-
   if(카드>5){
     카드변경(카드-5)
   }else if(카드<=0){
@@ -64,7 +65,6 @@ function Div1() {
       <div className="Imagebox">
         
         <div className="Ssentence">
-        
           <div className="Small1">Music,</div>
           <div className="Small2">Connect Everyone</div>
         </div>

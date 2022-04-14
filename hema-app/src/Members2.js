@@ -22,7 +22,7 @@ const 가입년도2=['06','07','08','09','10',
 function Members() {
   return(
     <div>
-      <Div1></Div1>
+      {/* <Div1></Div1> */}
       <Div2></Div2>
     </div>
   );

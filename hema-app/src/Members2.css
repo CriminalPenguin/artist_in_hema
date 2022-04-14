@@ -1,6 +1,12 @@
 .Main {
+  background-color: #d2e1f6;
+  width: 100%;
+  padding-top: 200px;
   justify-content: center;
   text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .Years {
@@ -31,5 +37,8 @@
 .Display {
   height: 767px;
   width: 480px;
-  
+  border-radius: 40px;
+  margin-bottom: 200px;
+  background: #e4eeff;
+  box-shadow:  20px -20px 43px #c2cad9
 }
