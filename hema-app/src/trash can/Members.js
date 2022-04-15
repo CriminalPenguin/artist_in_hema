@@ -2,7 +2,7 @@ import './Members.css';
 import React from 'react';
 import { useRef, useEffect, useState } from 'react';
 
-import dummy from "./data/data.json"
+import dummy from "../data/data.json"
 
 const divNum = [1991,1993,1995,1997,1999,
                 2001,2003,2005,2007,2009,
