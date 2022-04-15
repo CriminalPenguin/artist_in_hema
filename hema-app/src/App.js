@@ -4,9 +4,7 @@ import logo from './img/logo.svg';
 import left from './img/left.svg';
 import right from './img/right.svg';
 import arrow from './img/Arrow.svg';
-import { useRef, useEffect, useState } from 'react';
-
-import TypeIt from "typeit-react";
+import { useState } from 'react';
 
 import dummy from "./data/data.json"
 
@@ -30,7 +28,7 @@ function 랜덤선택(랜덤아이디) {
   }
 
   console.log(랜덤아이디);
-}
+} // 랜덤 멤버 노출을 위한 함수
 
 function App() {
   let [카드, 카드변경]= useState(1);
@@ -91,6 +89,10 @@ function Div1() {
 } //파트1만 렌더링
 
 function Div2() {
+  const style = {
+    top: 500
+  };
+
   return (
     <div className="Div2">
       <div className="PageTitle">
@@ -204,6 +206,6 @@ function CardSlide(props) {
       </div>
     );
   }
-}
+} // 랜덤멤버 렌더링 함수
 
 export default App;
