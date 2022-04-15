@@ -1,6 +1,10 @@
 import './Members2.css';
 import React from 'react';
-import { useRef, useEffect, useState } from 'react';
+import { useState } from 'react';
+
+import left from './img/left.svg';
+import right from './img/right.svg';
+import insta from './img/instagram2.png'
 
 import dummy from "./data/data.json"
 
@@ -64,11 +68,44 @@ function Show(props) {
   }) // 받아온 가입년도 정보를 기반으로 가입년도별 데이터 추출
   
   let [num, num변경] = useState(0);
-  var 선택자 = data[num]
+  var 선택자 = data[num];
+  var len = data.length;
+  var barnum = 1/len;
+  var result = barnum*(num+1)*100;
+  const style={
+    width: `${result}%`
+  };
+
+  const style2={
+    left: `${result}%`
+  }
+
+  const Minus = ()=> {
+    if(num === 0){
+      num변경((len-1))
+    }
+    else{
+      num변경(num - 1)
+    }
+    
+  } 
+  
+  const Plus = () => {
+    if(num === (len-1)){
+      num변경(0)
+    }
+    else{
+      num변경(num + 1)
+    }
+  }
 
   return (
     <div className="Display">
-            <div className="Part1"><p>Playing Now {props.a}</p></div>
+            <div className="Part1">
+              <div><div></div></div>
+              <p>Playing Now {props.a}</p>
+              <div><a href={선택자.insta}><div id="insta"><img src={insta}></img></div></a></div>
+            </div>
             <div className="Part2">
               <div className="Circle">
                 <div className="Photo">
@@ -102,13 +139,21 @@ function Show(props) {
                 <div>0:00</div>
                 <div>{data.length}:00</div>
               </div>
-              <div className="Bar"></div>
-              <div className="Now"><div></div></div>
+              <div className="Bar">
+                <div style={style} className="Progress"></div>
+                <div className="Now" style={style2}><div></div></div>
+              </div>
             </div>
             <div className="Part5">
-              <div onClick={()=>num변경(num-1)}></div>
-              <div id="play"></div>
-              <div onClick={()=>num변경(num+1)}></div>
+              <div className="Btn" onClick={Minus}><img src={left}></img></div>
+              <div id="play">
+                <div id="playbtn">
+                  <div id="btn">
+                    <div className="Nemo"></div><div className="Nemo"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="Btn" onClick={Plus}><img src={right}></img></div>
             </div>
           </div>
       

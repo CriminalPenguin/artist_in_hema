@@ -78,6 +78,8 @@
   font-weight: 800;
   font-size: 64px;
   line-height: 77px;
+
+  animation: fadein 2s ease-in-out;
 }
 
 .Small2 {
@@ -85,6 +87,8 @@
   font-weight: 800;
   font-size: 64px;
   line-height: 77px;
+
+  animation: fadein 2s ease-in-out;
 }
 
 .Bsentence {
@@ -101,6 +105,8 @@
   font-size: 64px;
   line-height: 77px;
   color: white;
+
+  animation: fadein 5s ease-in-out;
 }
 
 .Big2 {
@@ -108,6 +114,8 @@
   font-size: 32px;
   line-height: 48px;
   color: white;
+
+  animation: fadein 5s ease-in-out;
 }
 
 .Logobox {
@@ -385,11 +393,16 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+
+@keyframes fadein{
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
+    transform: none;
   }
 }
