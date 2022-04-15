@@ -70,7 +70,7 @@ function Div1() {
         </div>
         <div className="Bsentence">
           <div className="Big1">Eat, drink, listen and play.</div>
-          <div className="Big2">Find your joy with amazing people</div>
+          <div className="Big2">Find your joy with amazing people in HEMA</div>
         </div>
         <div className="Logobox">
           <a href="https://www.instagram.com/hema_1991_/?hl=ko">
