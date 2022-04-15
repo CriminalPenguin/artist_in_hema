@@ -1,12 +1,66 @@
+.Page {
+  position: relative;
+}
+
+.Navbar {
+  height: 90%;
+  width: 50px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
+  border-radius: 15px;
+  background: #e4eeff;
+  box-shadow:  10px 10px 20px #cfd9e8;
+}
+
+.Navbar div {
+  color: #616875;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+  cursor: pointer;
+}
+
 .Main {
   background-color: #d2e1f6;
   width: 100%;
-  padding-top: 200px;
   justify-content: center;
   text-align: center;
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.Playlist {
+  height: 200px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.Playlist div {
+  width: 300px;
+  height: 101px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 24px;
+  background: linear-gradient(145deg, #cdd6e6, #f4ffff);
+  box-shadow:  10px 10px 20px #cfd9e8,
+              -10px -10px 20px #f9ffff;
+}
+
+.Playlist p {
+  color: #616875;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 37px;
 }
 
 .Years {

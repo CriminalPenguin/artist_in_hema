@@ -1,6 +1,7 @@
 import './Members2.css';
 import React from 'react';
 import { useState } from 'react';
+import { Link } from 'react-scroll';
 
 import left from './img/left.svg';
 import right from './img/right.svg';
@@ -23,29 +24,35 @@ const 가입년도2=['06','07','08','09','10',
               '11','12','13','14','15',
               '16','17','18','19','20']
 
-function Members() {
 
+function Members() {
   return(
-    <div>
-      {/* <Div1></Div1> */}
+    <div className="Page">
+      <Nav></Nav>
+      <Div1></Div1>
       <Div2></Div2>
     </div>
   );
 } // 전체 UI표시 함수
 
+function Nav() {
+  return(
+    <div className="Navbar">
+      {divNum.map(function(a){
+        return(
+          <Link to={a-1990} spy={true} smooth={true}>
+            <div>{a}</div>
+          </Link>
+        );
+      })}
+    </div>
+  );
+}
+
 function Div1() {
   return(
     <div className="Main">
-      <div className="Years">
-        { 가입년도.map(function(a){
-          return (<div className="Num">{a}</div>)
-        })}
-      </div>
-      <div className="Years">
-        { 가입년도2.map(function(a){
-          return (<div className="Num">{a}</div>)
-        })} 
-      </div>
+      <div className="Playlist"><div><p>Member Playlist</p></div></div>
     </div>
   );
 } // 가입년도 네비게이션 바 함수
@@ -100,7 +107,7 @@ function Show(props) {
   }
 
   return (
-    <div className="Display">
+    <div className="Display" id={props.a - 1990}>
             <div className="Part1">
               <div><div></div></div>
               <p>Playing Now {props.a}</p>
