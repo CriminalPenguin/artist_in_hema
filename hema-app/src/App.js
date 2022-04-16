@@ -9,6 +9,7 @@ import { useState } from 'react';
 import dummy from "./data/data.json"
 
 import Members from './Members2.js';
+import Register from './Register.js';
 
 import { Route } from 'react-router-dom';
 
@@ -50,6 +51,10 @@ function App() {
 
       <Route path="/members">
         <Members></Members>
+      </Route>
+
+      <Route path="/register">
+        <Register></Register>
       </Route>
     </div>
   );
@@ -129,7 +134,7 @@ function Div3(props) {
   return (
     <div className="Div3">
       <div className="CardTitle">
-        <div className="Title">Random Artists</div>
+        <div className="Title">Artists</div>
       </div>
       <div className="CardPart">
         <CardSlide 카드={props.카드} 카드변경={props.카드변경} 랜덤아이디={props.랜덤아이디}></CardSlide>
@@ -146,6 +151,7 @@ function Div3(props) {
         </div>
         
       </div>
+      <div className="Join"><a href="/register">Are you a member of this community?</a></div>
     </div>
   );
 } //파트3만 렌더링

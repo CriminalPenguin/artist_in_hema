@@ -67,9 +67,28 @@ function Show(props) {
   
   let [num, num변경] = useState(0);
   var 선택자 = data[num];
+
   var len = data.length;
   var barnum = 1/len;
+  
+  if (선택자 === undefined){
+    선택자 = {
+      "id" : 0,
+      "join" : "",
+      "name" : "",
+      "class" : "",
+      "ename" : "Nobody",
+      "phone" : "01041391978",
+      "session" : [],
+      "band" : [],
+      "insta" : ""
+    };
+
+    barnum = 0;
+  }
+
   var result = barnum*(num+1)*100;
+  
   const style={
     width: `${result}%`
   };

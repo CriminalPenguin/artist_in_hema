@@ -3,28 +3,6 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/ 
-@media all and (min-width:768px) and (max-width:1023px) {
-  /*스타일입력*/
-} 
-
-/* 테블릿 세로 (해상도 768px ~ 1023px)*/ 
-@media all and (min-width:768px) and (max-width:1023px) {
-  /*스타일입력*/
-} 
-
-/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/ 
-@media all and (min-width:480px) and (max-width:767px) {
-  /*스타일입력*/
-} 
-
-/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/ 
-@media all and (max-width:479px) {
-  /*스타일입력*/
-}
-
-
-
 .Div1 {
   position: relative;
   width: 100%;
@@ -244,16 +222,31 @@
 .CardPart {
   display: flex;
   flex-direction: column;
-  height: 80%;
+  height: 70%;
   width: 100%;
   justify-content: center;
   align-items: center;
   text-align: center; 
 }
 
+.Join {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.Join a {
+  text-decoration: none;
+  color: #616875;
+}
+
 .Card {
   position: relative;
-  height: 70%;
+  height: 78%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -277,7 +270,7 @@
 }
 
 .More {
-  height: 25%;
+  height: 17%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -405,4 +398,36 @@
     opacity: 1;
     transform: none;
   }
+}
+
+/* PC , 테블릿 가로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) {
+  /*스타일입력*/
+} 
+
+/* 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) {
+  /*스타일입력*/
+} 
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/ 
+@media all and (min-width:480px) and (max-width:767px) {
+  /*스타일입력*/
+  .Logobox {
+    position: absolute;
+    display: flex;
+    bottom: 40px;
+    right: 20px;
+  }
+  
+  .Logobox img {
+    margin-left: 40px;
+    height: 30px;
+    width: 30px;
+  }
+} 
+
+/* 모바일 가로, 테블릿 세로 (해상도 ~ 479px)*/ 
+@media all and (max-width:479px) {
+  /*스타일입력*/
 }
