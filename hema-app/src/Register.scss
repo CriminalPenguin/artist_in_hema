@@ -41,7 +41,7 @@
 
 .P1 {
   display: flex;
-  height: 10%;
+  height: 15%;
   width: 100%;
   justify-content: space-evenly;
   text-align: center;
@@ -96,18 +96,36 @@
 
 .P3 {
   display: flex;
+  flex-direction: column;
   height: 10%;
   width: 50%;
   justify-content: space-evenly;
-  text-align: left;
+  text-align: center;
   align-items: center;
   font-weight: 800;
   font-size: 20px;
   color: #616875;
 }
 
-.P4 {
+.La {
+  cursor: pointer;
+}
+
+#chooseFile {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+}
+
+#chooseFile::file-selector-button {
+  display: none;
+}
+
+.P4 {
+  width: 100%;#chooseFile {
+    visibility: hidden;
+}
   height: 15%;
   display: flex;
   flex-direction: column;
