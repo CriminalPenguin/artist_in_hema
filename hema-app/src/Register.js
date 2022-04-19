@@ -4,8 +4,7 @@ import React, { useState } from 'react';
 import dummy from "./data/data.json"
 
 
-const group = [];
-const group2 = [];
+var group = {};
 
 function Register() {
   let [등록정보, 등록정보변경] = useState({
@@ -19,8 +18,16 @@ function Register() {
     band : "",
     insta : ""
   })
+  let [밴드,밴드변경] = useState({
+    b1: "",
+    b2: "",
+    b3: "",
+    b4: "",
+    b5: ""
+  });
 
   const { id, join, name, classe, ename, phone, session, band, insta } = 등록정보;
+  const { b1, b2, b3, b4, b5 } = 밴드; 
 
   const onChange = (e) => {
     const { value, name } = e.target; // 우선 e.target 에서 name 과 value 를 추출
@@ -31,18 +38,27 @@ function Register() {
   };
 
   const onChangeCheck = (e) => {
-    const { checked, id } = e.target; // 우선 e.target 에서 name 과 value 를 추출
+    const { checked, id,  } = e.target; // 우선 e.target 에서 name 과 value 를 추출
     if(checked === true){
-      group.push(id);
+      group.id = id;
     }
     else if( checked === false){
-      group.pop(id);
+      delete group.id;
     }
   };
 
+  const onChangeBand = (e) => {
+    const { value, name } = e.target; // 우선 e.target 에서 name 과 value 를 추출
+    밴드변경({
+      ...밴드, // 기존의 input 객체를 복사한 뒤
+      [name] : value // id 키를 가진 값을 value 로 설정
+    });
+    console.log(밴드);
+  };
+
   function sendData () {
-    등록정보.session = group;
-    등록정보.band = group2;
+    등록정보변경(등록정보.session = group);
+    등록정보변경(등록정보.band = 밴드);
     console.log(등록정보);
   }
 
@@ -78,11 +94,11 @@ function Register() {
         <div className="P5">
           <div className="Font">참여했던 밴드</div>
           <div className="band">
-            <div className="input-container"><input type="text" id="b1" name="band" value={band} /><label>1</label></div>
-            <div className="input-container"><input type="text" id="b2" name="band" value={band} /><label>2</label></div>
-            <div className="input-container"><input type="text" id="b3" name="band" value={band} /><label>3</label></div>
-            <div className="input-container"><input type="text" id="b4" name="band" value={band} /><label>4</label></div>
-            <div className="input-container"><input type="text" id="b5" name="band" value={band} /><label>5</label></div>
+            <div className="input-container"><input type="text" name="b1" value={b1} onChange={onChangeBand}/><label>1</label></div>
+            <div className="input-container"><input type="text" name="b2" value={b2} onChange={onChangeBand}/><label>2</label></div>
+            <div className="input-container"><input type="text" name="b3" value={b3} onChange={onChangeBand}/><label>3</label></div>
+            <div className="input-container"><input type="text" name="b4" value={b4} onChange={onChangeBand}/><label>4</label></div>
+            <div className="input-container"><input type="text" name="b5" value={b5} onChange={onChangeBand}/><label>5</label></div>
           </div>
         </div>
         <div className="P6">
