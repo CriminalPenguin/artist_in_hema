@@ -5,6 +5,7 @@ import dummy from "./data/data.json"
 
 
 var group = {};
+var auto = 1;
 
 function Register() {
   let [등록정보, 등록정보변경] = useState({
@@ -26,7 +27,7 @@ function Register() {
     b5: ""
   });
 
-  const { id, join, name, classe, ename, phone, session, band, insta } = 등록정보;
+  const { join, name, classe, ename, phone, insta } = 등록정보;
   const { b1, b2, b3, b4, b5 } = 밴드; 
 
   const onChange = (e) => {
@@ -36,15 +37,19 @@ function Register() {
       [name]: value // name 키를 가진 값을 value 로 설정
     });
   };
-
+  
   const onChangeCheck = (e) => {
     const { checked, id,  } = e.target; // 우선 e.target 에서 name 과 value 를 추출
     if(checked === true){
-      group.id = id;
+      group[auto] = id;
+      auto ++;
     }
     else if( checked === false){
-      delete group.id;
+      auto --;
+      delete group[auto];
     }
+    console.log(auto);
+    console.log(group);
   };
 
   const onChangeBand = (e) => {
@@ -53,13 +58,15 @@ function Register() {
       ...밴드, // 기존의 input 객체를 복사한 뒤
       [name] : value // id 키를 가진 값을 value 로 설정
     });
-    console.log(밴드);
   };
 
   function sendData () {
     등록정보변경(등록정보.session = group);
     등록정보변경(등록정보.band = 밴드);
+    등록정보변경(등록정보.id = dummy.members.length + 1);
+    // JSON 파일에 정보 추가
     console.log(등록정보);
+    window.location.replace("/members");
   }
 
   return (

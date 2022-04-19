@@ -79,8 +79,8 @@ function Show(props) {
       "class" : "",
       "ename" : "Nobody",
       "phone" : "01041391978",
-      "session" : [],
-      "band" : [],
+      "session" : {},
+      "band" : {},
       "insta" : ""
     };
 
@@ -133,7 +133,7 @@ function Show(props) {
             <div className="Part3">
               <p id="name">{선택자.ename}</p>
               <div id="session">
-                {선택자.session.map(function(b){
+                {Object.keys(선택자.session).forEach(function(b){
                   return(
                     <div>
                       {b}&nbsp;&nbsp;
@@ -142,7 +142,7 @@ function Show(props) {
                 })}
               </div>
               <div id="band">
-                {선택자.band.map(function(b){
+                {Object.keys(선택자.band).forEach(function(b){
                   return(
                     <div>
                       {b}&nbsp;&nbsp;
@@ -166,7 +166,7 @@ function Show(props) {
               <div id="play">
                 <div id="playbtn">
                   <div id="btn">
-                    <div className="Nemo"></div><div className="Nemo"></div>
+                    <div className="NemO"></div><div className="NemO"></div>
                   </div>
                 </div>
               </div>
