@@ -8,6 +8,8 @@ var group = {};
 var auto = 1;
 
 function Register() {
+  
+
   let [등록정보, 등록정보변경] = useState({
     id : "",
     join : "",
@@ -64,8 +66,10 @@ function Register() {
     등록정보변경(등록정보.session = group);
     등록정보변경(등록정보.band = 밴드);
     등록정보변경(등록정보.id = dummy.members.length + 1);
+    등록정보변경("https://www.instagram.com/"+등록정보);
     // JSON 파일에 정보 추가
     console.log(등록정보);
+    localStorage.setItem('./data/data.json', 등록정보);
     window.location.replace("/members");
   }
 
