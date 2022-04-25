@@ -135,9 +135,7 @@ function Show(props) {
               <div id="session">
                 {Object.keys(선택자.session).forEach(function(b){
                   return(
-                    <div>
-                      {b}&nbsp;&nbsp;
-                    </div>
+                    <div>{선택자.session}</div>
                   )
                 })}
               </div>
