@@ -196,7 +196,7 @@
   height: 13%;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   display: flex;
   flex-direction: column;
 }
@@ -214,6 +214,10 @@
   line-height: 21px;
   color: #616875;
   display: flex;
+}
+
+#session p {
+  margin: 10px;
 }
 
 #band {

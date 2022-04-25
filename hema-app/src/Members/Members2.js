@@ -131,19 +131,20 @@ function Show(props) {
               </div>
             </div>
             <div className="Part3">
-              <p id="name">{선택자.ename}</p>
+              <div id="name">{선택자.ename}</div>
               <div id="session">
-                {Object.keys(선택자.session).forEach(function(b){
+                {Object.values(선택자.session).map(function(b){
+                  console.log(b);
                   return(
-                    <div>{선택자.session}</div>
+                    <p>&nbsp;{b}&nbsp;</p>
                   )
                 })}
               </div>
               <div id="band">
-                {Object.keys(선택자.band).forEach(function(b){
+                {Object.values(선택자.band).map(function(b){
                   return(
                     <div>
-                      {b}&nbsp;&nbsp;
+                      &nbsp;{b}&nbsp;
                     </div>
                   )
                 })}
