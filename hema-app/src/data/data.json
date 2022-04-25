@@ -7,8 +7,8 @@
       "class" : "12",
       "ename" : "JUNGU LEE",
       "phone" : "01041391978",
-      "session" : { "1": "guitar",
-                    "2": "synthesizer"},
+      "session" : { "1": "Guitar",
+                    "2": "Synthesizer"},
       "band" : {"b1":"12NewWave", "b2":"양현동의esp", "b3":"Downtown Bros", "b4":"Fuse"},
       "add" : "⚽️",
       "insta" : "https://www.instagram.com/l.jun9/"
@@ -20,7 +20,7 @@
       "class" : "12",
       "ename" : "TAESOO JANG",
       "phone" : "01024606389",
-      "session" : {"1":"bass"},
+      "session" : {"1":"Bass"},
       "band" : {"b1":"12NewWave", "b2":"Downtown Bros", "b3":"Fuse", "b4":"MNN", "b5":"WER"},
       "insta": ""
     },
@@ -31,7 +31,7 @@
       "class" : "12",
       "ename" : "HOJUNG PARK",
       "phone" : "01031202086",
-      "session" : {"1":"vocal"},
+      "session" : {"1":"Vocal"},
       "band" : {"b1":"12NewWave", "b2":"Fuse"},
       "add" : "⚽️",
       "boss" : true,
@@ -44,7 +44,7 @@
       "class" : "12",
       "ename" : "YONGHO KIM",
       "phone" : "01064497174",
-      "session" : {"1":"vocal", "2":"bass"},
+      "session" : {"1":"Vocal", "2":"Bass"},
       "band" : {"b1":"YTR", "b2":"가오리", "b3":"라무네"},
       "add" : "⚽️",
       "insta": ""
@@ -56,7 +56,7 @@
       "class" : "12",
       "ename" : "HYUNDONG YANG",
       "phone" : "01056357720",
-      "session" : {"1":"guitar"},
+      "session" : {"1":"Guitar"},
       "band" : {"b1":"12NewWave", "b2":"양현동의esp", "b3":"Downtown Bros", "b4":"YTR", "b5":"Fuse"},
       "insta": ""
     },
@@ -67,7 +67,7 @@
       "class" : "12",
       "ename" : "WONKYUNG KIM",
       "phone" : "01025353018",
-      "session" : {"1":"vocal"},
+      "session" : {"1":"Vocal"},
       "band" : {"b1":"12NewWave", "b2":"SMC"},
       "insta": ""
     },
@@ -78,7 +78,7 @@
       "class" : "13",
       "ename" : "TAEIL HWANG",
       "phone" : "01073840076",
-      "session" : {"1":"drum", "2":"keyboard"},
+      "session" : {"1":"Drum", "2":"Keyboard"},
       "band" : {"b1":"13NewWave", "b2":"Fuse", "b3":"WER", "b4":"수민은 혼란스럽다", "b5":"Alcoholics"},
       "add" : "⚽️",
       "insta": ""
@@ -90,7 +90,7 @@
       "class" : "13",
       "ename" : "JINHYUN JUNG",
       "phone" : "01089025283",
-      "session" : {"1":"vocal"},
+      "session" : {"1":"Vocal"},
       "band" : {"b1":"13NewWave", "b2":"Downtown Bros"},
       "add" : "⚽️",
       "boss" : true,
@@ -103,7 +103,7 @@
       "class" : "08",
       "ename" : "WOOSUCK CHOI",
       "phone" : "01087679455",
-      "session" : {"1":"drum"},
+      "session" : {"1":"Drum"},
       "band" : {"b1":"12NewWave", "b2":"Downtown Bros"},
       "add" : "⚽️",
       "insta": ""
