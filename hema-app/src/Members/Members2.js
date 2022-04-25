@@ -3,11 +3,11 @@ import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-scroll';
 
-import left from './img/left.svg';
-import right from './img/right.svg';
-import insta from './img/instagram2.png'
+import left from '../img/left.svg';
+import right from '../img/right.svg';
+import insta from '../img/instagram2.png'
 
-import dummy from "./data/data.json"
+import dummy from "../data/data.json"
 
 const divNum = [1991,1992,1993,1994,1995,
                 1996,1997,1998,1999,2000,
@@ -126,7 +126,7 @@ function Show(props) {
             <div className="Part2">
               <div className="Circle">
                 <div className="Photo">
-                  <img src={require("./sample/"+ 선택자.id + ".jpeg")}></img>
+                  <img src={require("../sample/"+ 선택자.id + ".jpeg")}></img>
                 </div>
               </div>
             </div>

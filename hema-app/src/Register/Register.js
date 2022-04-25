@@ -1,7 +1,7 @@
 import './Register.scss';
 import React, { useState } from 'react';
 
-import dummy from "./data/data.json"
+import dummy from "../data/data.json"
 
 
 var group = {};
